@@ -13,8 +13,7 @@ data.load <- function() {
   }
   
   # Read the data into memory
-  data <- read.table(unz(file.path, 'household_power_consumption.txt'), sep=";", 
-                     header=T, as.is=T, 
+  data <- read.table(unz(file.path, 'household_power_consumption.txt'), sep=";", header=T, as.is=T, 
                      colClasses=c('character', 'character', rep('numeric', 7)),
                      na.strings=c('?'))
   
