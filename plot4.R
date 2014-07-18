@@ -13,7 +13,7 @@ par(mfrow=c(2,2))
 
 # Plot No 1
 plot(data$Global_active_power, type='l', 
-     ylab='Global Active Power (kilowatts)', xlab='', xaxt='n')
+     ylab='Global Active Power', xlab='', xaxt='n')
 axis(1, at=c(0, nrow(data)/2, nrow(data)), labels=c('Thu', 'Fri', 'Sat'))
 
 # Plot No 2
