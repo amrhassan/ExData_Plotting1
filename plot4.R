@@ -30,7 +30,7 @@ legend('topright', legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'
        lwd=1, col=c('black', 'red', 'blue'), bty='n')
 
 # Plot No 4
-plot(data$Global_reactive_power, xaxt='n', type='l', xlab='datetime')
+plot(data$Global_reactive_power, xaxt='n', type='l', xlab='datetime', ylab='Global_reactive_power')
 axis(1, at=c(0, nrow(data)/2, nrow(data)), labels=c('Thu', 'Fri', 'Sat'))
 
 # Close the graphics device
